@@ -114,7 +114,7 @@ export const cameraStyles = StyleSheet.create({
     },
 });
 
-export const previewStyles  = StyleSheet.create({
+export const previewStyles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#000',
@@ -134,8 +134,9 @@ export const previewStyles  = StyleSheet.create({
         paddingBottom: 20,
     },
     photoContainer: {
-        width: '48%',
+        width: 80,
         marginBottom: 15,
+        marginRight: 15,
         position: 'relative',
     },
     photo: {
@@ -180,5 +181,104 @@ export const previewStyles  = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
+    },
+});
+
+export const photostripStyles = StyleSheet.create({
+    templateScrollContainer: {
+        marginBottom: 15,
+    },
+
+    templateScrollContent: {
+        paddingHorizontal: 10,
+    },
+
+    templateOption: {
+        marginRight: 10,
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 8,
+        overflow: 'hidden',
+    },
+
+    templateOptionSelected: {
+        borderWidth: 3,
+        borderColor: '#007AFF',
+    },
+
+    templateImage: {
+        width: 80,
+        height: 120,
+        resizeMode: 'cover',
+    },
+    photostripContainer: {
+        position: 'relative',
+        backgroundColor: '#333',
+        marginVertical: 20,
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+        elevation: 8,
+    },
+    templateBackground: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        top: 0,
+        left: 0,
+        borderRadius: 10,
+    },
+    leftColumn: {
+        position: 'absolute',
+        left: '4%',
+        top: '3%',
+        height: '85%',
+        width: '42%',
+        justifyContent: 'space-between',
+    },
+    rightColumn: {
+        position: 'absolute',
+        right: '4%',
+        top: '3%',
+        height: '85%',
+        width: '42%',
+        justifyContent: 'space-between',
+    },
+    photoFrame: {
+        backgroundColor: 'transparent',
+        overflow: 'hidden',
+        borderRadius: 8,
+    },
+    framePhoto: {
+        width: '100%',
+        height: '100%',
+    },
+    emptyFrame: {
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#333',
+    },
+    sectionTitle: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: 'white',
+        marginTop: 20,
+        marginBottom: 15,
+        textAlign: 'center',
+    },
+    individualPhotosContainer: {
+        height: 120,
+        marginBottom: 20,
+    },
+    individualPhotosContent: {
+        paddingHorizontal: 10,
+    },
+    individualPhoto: {
+        width: 80,
+        height: 100,
+        borderRadius: 10,
+        backgroundColor: '#333',
     },
 });

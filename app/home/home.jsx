@@ -23,7 +23,7 @@ export default function Index() {
       <Stack.Screen options={{ headerShown: false }} />
       
       <LinearGradient
-        colors={['#667eea', '#764ba2']}
+        colors={['#a8d5a8', '#7bb899', '#6ba583']}
         style={styles.container}
       >
         <ScrollView 
@@ -93,7 +93,7 @@ export default function Index() {
               activeOpacity={0.8}
             >
               <LinearGradient
-                colors={['#ff6b6b', '#ee5a52']}
+                colors={['#7bb899', '#6ba583']}
                 style={styles.buttonGradient}
               >
                 <Text style={styles.buttonIcon}>📷</Text>
